@@ -2,11 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Morning Bites</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<a href="Menu.html">Menu</a>
+
+<!-- Navbar -->
+<header>
+  <span onclick="openMenu()" class="menu-btn">☰</span>
+  <h2>Morning Bites</h2>
+  <input type="text" placeholder="Search...">
+</header>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <a href="Menu.html">Menu</a>
+  <a href="#">Reservation</a>
+  <a href="#">Delivery</a>
+  <a href="#">About Us</a>
+  <a href="#">Offers</a>
+  <a href="#">Gallery</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+<!-- Hero -->
+<section class="hero">
+  <div>
+    <h1>Fresh Breakfast Every Morning ☀️</h1>
+    <p>Start your day with delicious meals</p>
+    <button>Order Now</button>
+  </div>
+
+  <img src="images/breakfast.jpg">
+</section>
+
+<!-- Dishes -->
+<section class="featured">
+  <h2>The dishes we specialize in</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img class="img" src="images/pancake.jpg">
+      <p>Pancakes 🥞</p>
+      <span class="price">🔥 Only 65 EGP</span>
+    </div>
+
+    <div class="card">
+      <img  class="img" src="images/plain.jpg">
+      <p>Croissant 🥐</p>
+      <span class="price">✨ 45 EGP</span>
+    </div>
+
+    <div class="card">
+      <img class="img" src="images/Honey Waffles  Fruit.jpg">
+      <p>Waffle 🧇</p>
+      <span class="price">🔥 70 EGP</span>
+    </div>
+
+    <div class="card">
+      <img class="img" src="images/lattee.jpg">
+      <p>Latte ☕</p>
+      <span class="price">☕ 55 EGP</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Actions -->
+<section class="actions">
+  <button>View Menu</button>
+  <button>Reserve Table</button>
+  <button>Order Delivery</button>
+</section>
+<footer>@2026Morning Bites.All rights resered</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
